@@ -1,0 +1,101 @@
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	height: 100dvh;
+	padding: 50px;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 40px;
+	height: 100%;
+	width: 100%;
+	max-width: 850px;
+	background-color: aliceblue;
+}
+
+form {
+	display: flex;
+	width: 100%;
+	padding: 20px;
+}
+
+fieldset {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 10px;
+	border-radius: 14px;
+	padding: 10px;
+}
+
+fieldset input {
+	flex: 1;
+	display: flex;
+	border-radius: 12px;
+	padding: 8px;
+}
+
+.btn-primary {
+	background-color: blue;
+	padding: 6px 18px;
+	color: white;
+	border: none;
+	border-radius: 12px;
+	cursor: pointer;
+}
+
+.btn-primary:hover {
+	background-color: rgb(28, 28, 119);
+}
+
+section.tasksSection {
+	width: 100%;
+	padding: 20px 20px 20px 40px;
+}
+
+ul {
+	display: flex;
+	flex-direction: column;
+    gap: 10px;
+}
+
+ul li.task {
+	border-radius: 12px;
+	background-color: antiquewhite;
+}
+
+ul li.task div {
+	display: flex;
+	width: 100%;
+	padding: 10px;
+	justify-content: flex-start;
+}
+
+.btn-delete {
+	background-color: red;
+	width: 30px;
+	border: none;
+	color: aliceblue;
+	font-size: 16px;
+	margin-right: 0;
+	margin-left: auto;
+	cursor: pointer;
+}
+
+.btn-delete:hover {
+	background-color: rgb(134, 9, 9);
+}
