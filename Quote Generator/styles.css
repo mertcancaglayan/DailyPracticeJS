@@ -1,0 +1,52 @@
+*::after,
+*::before,
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 100dvh;
+	padding: 72px;
+	gap: 36px;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+}
+
+main button#btn {
+	width: 144px;
+	height: 24px;
+	align-self: center;
+	background-color: rgb(180, 128, 61);
+	color: white;
+	cursor: pointer;
+	border: none;
+	border-radius: 6px;
+}
+
+main button#btn:hover {
+	background-color: rgb(150, 96, 25);
+}
+
+main article {
+	max-width: 768px;
+	width: 100%;
+	background-color: burlywood;
+	padding: 18px;
+	border-radius: 12px;
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
+}
+
+main article span {
+	align-self: flex-end;
+}
