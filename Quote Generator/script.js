@@ -154,11 +154,16 @@ const quotes = [
 const btn = document.getElementById("btn");
 const quoteArea = document.getElementById("quote");
 const authorArea = document.getElementById("author");
+const copyButton = document.getElementById("copy");
 
 let showedQuote = [];
 
 btn.addEventListener("click", () => {
 	displayQuote();
+});
+
+copyButton.addEventListener("click", () => {
+	copyQuote();
 });
 
 function displayQuote() {
@@ -181,4 +186,12 @@ displayQuote();
 
 function generateId() {
 	return Math.floor(Math.random() * 30);
+}
+
+async function copyQuote() {
+	try {
+		await navigator.clipboard.writeText(quoteArea.innerText);
+	} catch (error) {
+		console.error(error);
+	}
 }

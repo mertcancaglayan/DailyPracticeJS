@@ -50,3 +50,16 @@ main article {
 main article span {
 	align-self: flex-end;
 }
+
+#copy {
+	width: 144px;
+	background-color: chocolate;
+	color: white;
+	border: none;
+	border-radius: 6px;
+	cursor: pointer;
+}
+
+#copy:hover {
+	background-color: rgb(126, 60, 13);
+}
