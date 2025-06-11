@@ -1,0 +1,63 @@
+*::after,
+*::before,
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: grey;
+	display: grid;
+	place-items: center;
+}
+
+section {
+	width: 100%;
+	max-width: 800px;
+	padding: 20px;
+}
+
+form {
+	width: 100%;
+	border: 1px solid white;
+	text-align: center;
+	gap: 8px;
+	display: flex;
+	flex-direction: column;
+	padding: 12px;
+}
+
+fieldset {
+	border: none;
+	font-size: 24px;
+	display: flex;
+	width: 100%;
+	max-width: 600px;
+	gap: 8px;
+	justify-content: space-between;
+}
+
+input {
+	flex: 1;
+}
+
+label {
+	text-align: start;
+	width: 200px;
+}
+
+button {
+	align-self: center;
+	width: 150px;
+	cursor: pointer;
+	padding: 8px 0;
+	font-size: 16px;
+	background-color: black;
+	color: aliceblue;
+	border: none;
+}
+
+button:hover {
+    background-color: blue;
+}
