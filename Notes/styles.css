@@ -1,0 +1,86 @@
+*::after,
+*::before,
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Work Sans", "Noto Sans", sans-serif;
+	color: #111418;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	max-height: 100dvh;
+	padding: 12px;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	max-width: 1200px;
+	gap: 24px;
+	padding: 20px;
+}
+
+h2 {
+	font-weight: 600;
+	font-size: xx-large;
+}
+
+#note-input {
+	width: 100%;
+	max-width: 600px;
+	height: 250px;
+	padding: 12px;
+	resize: none;
+}
+
+#add-note {
+	padding: 12px;
+	align-self: flex-end;
+	background-color: #0c7ff2;
+	color: #ffff;
+	border: none;
+	border-radius: 8px;
+	cursor: pointer;
+}
+
+h3 {
+	font-size: x-large;
+	margin-bottom: 12px;
+}
+
+ul#notes-list {
+	display: flex;
+	flex-direction: column;
+	list-style-type: none;
+	margin-top: 12px;
+}
+
+li.note {
+	font-size: large;
+}
+
+li.note p {
+	font-size: larger;
+	font-weight: 600;
+}
+
+li .note-span {
+	display: flex;
+	margin-top: 12px;
+}
+
+button.delete {
+	margin-left: auto;
+	margin-right: 0;
+	padding: 8px 12px;
+	background-color: #f0f2f5;
+	cursor: pointer;
+	border: none;
+	border-radius: 8px;
+}
