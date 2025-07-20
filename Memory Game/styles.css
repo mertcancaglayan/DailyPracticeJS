@@ -1,0 +1,34 @@
+.grid {
+	display: grid;
+	grid-template-columns: repeat(4, 80px);
+	gap: 10px;
+}
+.card {
+	width: 80px;
+	height: 80px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 2rem;
+	background: #ccc;
+	cursor: pointer;
+	border-radius: 10px;
+	user-select: none;
+	border: 1px solid black;
+}
+
+.card .front {
+	opacity: 0;
+}
+.card.flipped .front {
+	opacity: 1;
+}
+
+.card.matched .front {
+    opacity: 1;
+}
+.matched  {
+	background: #8f8;
+	pointer-events: none;
+	opacity: 1;
+}
